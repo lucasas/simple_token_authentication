@@ -110,4 +110,4 @@ module SimpleTokenAuthentication
   end
 end
 
-Mongoid::Document.send :include, SimpleTokenAuthentication::ActsAsTokenAuthenticationHandler
+ActionController::Base.send :include, SimpleTokenAuthentication::ActsAsTokenAuthenticationHandler
