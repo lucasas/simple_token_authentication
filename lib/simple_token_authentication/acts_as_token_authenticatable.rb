@@ -30,4 +30,5 @@ module SimpleTokenAuthentication
     end
   end
 end
-ActiveRecord::Base.send :include, SimpleTokenAuthentication::ActsAsTokenAuthenticatable
+
+Mongoid::Document.send :include, SimpleTokenAuthentication::ActsAsTokenAuthenticatable
